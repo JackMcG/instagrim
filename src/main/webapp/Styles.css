@@ -14,3 +14,26 @@ nav {
     border: 2px;
     float: right;
 }
+
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -0px; 
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .page-wrap:after {
+  height: 0px; 
+}
+.site-footer {
+  background: white;
+}
+    // sticky footer code from: https://css-tricks.com/snippets/css/sticky-footer/
