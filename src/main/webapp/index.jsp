@@ -6,24 +6,41 @@
 
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@page import="uk.ac.dundee.computing.aec.instagrim.stores.*" %>
+<%@page import="uk.ac.dundee.computing.aec.instagrim.stores.*"%>
 <!DOCTYPE html>
 <html>
     <head>
+        <style>
+            body {
+                background-image: url("http://i.imgur.com/iSIiqoV.jpg");
+                background-repeat: no-repeat; 
+                background-size: cover;
+                
+            }
+        </style>
+        <!-- css goes here^^^^-->
         <title>Instagrim</title>
         <link rel="stylesheet" type="text/css" href="Styles.css" />
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     </head>
     <body>
+        <div class="page-wrap">
         <header>
-            <h1>InstaGrim ! </h1>
-            <h2>Your world in Black and White</h2>
+            <h1> <a href="/Instagrim"><img src ="http://i.imgur.com/Bwex2g0.png"></a> </h1>
+            <!--<h2>Your world in Black and White</h2>-->
         </header>
         <nav>
             <ul>
 
                
-                <li><a href="upload.jsp">Upload</a></li>
+               <a href="upload.jsp"><img src="http://i.imgur.com/VfnsvwW.png" style="position: absolute; top: 88px; right: 420px;"/></a>
+               
+               <!--
+               <div href="Upload.jsp" id ="UploadBtn" title="UploadBtn"> </div>
+               <!--
+               TODO button rollover code
+               -->
+               
                     <%
                         
                         LoggedIn lg = (LoggedIn) session.getAttribute("LoggedIn");
@@ -32,12 +49,14 @@
                             if (lg.getlogedin()) {
                     %>
 
-                <li><a href="/Instagrim/Images/<%=lg.getUsername()%>">Your Images</a></li>
+                <a href="/Instagrim/Images/<%=lg.getUsername()%>"><img src="http://i.imgur.com/OcS0qRx.png?1" style="position: absolute; top: 113px; right: 80px;"/></a>
                     <%}
                             }else{
                                 %>
-                 <li><a href="register.jsp">Register</a></li>
-                <li><a href="login.jsp">Login</a></li>
+                
+                <a href="register.jsp"><img src ="http://i.imgur.com/Yt9x9c0.png"></a>
+                <a href="login.jsp"><img src ="http://i.imgur.com/9O1zGKa.png"></a>
+                 
                 <%
                                         
                             
@@ -46,9 +65,13 @@
         </nav>
         <footer>
             <ul>
-                <li class="footer"><a href="/Instagrim">Home</a></li>
-                <li>&COPY; Andy C</li>
+               
+                </div>
+                <footer class="site-footer">
+                    <img src="http://i.imgur.com/6WRTwwE.png">
+                    <!-- stick footer code from: https://css-tricks.com/snippets/css/sticky-footer/-->
+                </footer>
             </ul>
         </footer>
-    </body>
+    
 </html>

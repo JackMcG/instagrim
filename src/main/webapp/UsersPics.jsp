@@ -6,30 +6,39 @@
 
 <%@page import="java.util.*"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@ page import="uk.ac.dundee.computing.aec.instagrim.stores.*" %>
+<%@page import="uk.ac.dundee.computing.aec.instagrim.stores.*"%>
 <!DOCTYPE html>
 <html>
     <head>
+        <style>
+            body {
+                background-image: url("http://i.imgur.com/iSIiqoV.jpg");
+                background-repeat: no-repeat; 
+                background-size: cover;
+                
+            }
+        </style>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Instagrim</title>
         <link rel="stylesheet" type="text/css" href="/Instagrim/Styles.css" />
     </head>
     <body>
+         <div class="page-wrap">
         <header>
         
-        <h1>InstaGrim ! </h1>
-        <h2>Your world in Black and White</h2>
+        <h1> <a href="/Instagrim"><img src ="http://i.imgur.com/Bwex2g0.png"></a> </h1>
+        <!--<h2>Your world in Black and White</h2>-->
         </header>
         
         <nav>
             <ul>
-                <li class="nav"><a href="/Instagrim/upload.jsp">Upload</a></li>
-                <li class="nav"><a href="/Instagrim/Images/majed">Sample Images</a></li>
+                <a href="/Instagrim/upload.jsp"><img src="http://i.imgur.com/VfnsvwW.png"></a>
+         
             </ul>
         </nav>
  
         <article>
-            <h1>Your Pics</h1>
+            <h1><img src="http://i.imgur.com/OcS0qRx.png?1"></h1>
         <%
             java.util.LinkedList<Pic> lsPics = (java.util.LinkedList<Pic>) request.getAttribute("Pics");
             if (lsPics == null) {
@@ -51,7 +60,11 @@
         </article>
         <footer>
             <ul>
-                <li class="footer"><a href="/Instagrim">Home</a></li>
+                 </div>
+                <footer class="site-footer">
+                    <img src="http://i.imgur.com/6WRTwwE.png">
+                    <!-- stick footer code from: https://css-tricks.com/snippets/css/sticky-footer/-->
+                </footer>
             </ul>
         </footer>
     </body>

@@ -8,22 +8,31 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <style>
+            body {
+                background-image: url("http://i.imgur.com/iSIiqoV.jpg");
+                background-repeat: no-repeat; 
+                background-size: cover;
+                
+            }
+        </style>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Instagrim</title>
         <link rel="stylesheet" type="text/css" href="Styles.css" />
     </head>
     <body>
-        <h1>InstaGrim ! </h1>
-        <h2>Your world in Black and White</h2>
+         <div class="page-wrap">
+         <h1> <a href="/Instagrim"><img src ="http://i.imgur.com/Bwex2g0.png"></a> </h1>
+        <!--<h2>Your world in Black and White</h2>-->
         <nav>
             <ul>
-                <li class="nav"><a href="upload.jsp">Upload</a></li>
-                <li class="nav"><a href="/Instagrim/Images/majed">Sample Images</a></li>
+                <a href="upload.jsp"><img src="http://i.imgur.com/VfnsvwW.png"></a>
+                
             </ul>
         </nav>
  
         <article>
-            <h3>File Upload</h3>
+            <h3><img src="http://i.imgur.com/qfD9lZX.png"></h3>
             <form method="POST" enctype="multipart/form-data" action="Image">
                 File to upload: <input type="file" name="upfile"><br/>
 
@@ -34,7 +43,11 @@
         </article>
         <footer>
             <ul>
-                <li class="footer"><a href="/Instagrim">Home</a></li>
+                </div>
+                <footer class="site-footer">
+                    <img src="http://i.imgur.com/6WRTwwE.png">
+                    <!-- stick footer code from: https://css-tricks.com/snippets/css/sticky-footer/-->
+                </footer>
             </ul>
         </footer>
     </body>
