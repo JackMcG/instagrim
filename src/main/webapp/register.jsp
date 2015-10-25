@@ -37,8 +37,12 @@
             <h><img src="http://i.imgur.com/8M2QSkP.png"></h3>
             <form method="POST"  action="Register">
                 <ul>
-                    <img src="http://i.imgur.com/RuBnyfr.png"><input type="text" name="username">
-                    <img src="http://i.imgur.com/FPIEeqv.png"> <input type="password" name="password">
+                    <img src="http://i.imgur.com/RuBnyfr.png"><input type="text" name="login"> <!--username-->
+                    <img src="http://i.imgur.com/FPIEeqv.png"> <input type="password" name="password"> <!--password-->
+                    
+                    <li>first name: <input type="text" name="firstname"> </li><!--first name-->
+                    <li>last name:  <input type="text" name="lastname"> </li><!--last name-->
+                    <li>email:      <input type="text" name="email"> </li><!--email-->
                 </ul>
                 <br/>
                 <input type="submit" value="Register"> 
