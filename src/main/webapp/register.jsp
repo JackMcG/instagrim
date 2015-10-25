@@ -37,12 +37,12 @@
             <h><img src="http://i.imgur.com/8M2QSkP.png"></h3>
             <form method="POST"  action="Register">
                 <ul>
-                    <img src="http://i.imgur.com/RuBnyfr.png"><input type="text" name="login"> <!--username-->
-                    <img src="http://i.imgur.com/FPIEeqv.png"> <input type="password" name="password"> <!--password-->
+                    <img src="http://i.imgur.com/I1AOAhL.png"> <input type="text" name="login" style="position: absolute; top: 120px; left: 250px;"> <!--username--> <br>
+                    <img src="http://i.imgur.com/s8GTQ0v.png"> <input type="password" name="password" style="position: absolute; top: 155px; left: 250px;"> <!--password--> <br>
                     
-                    <li>first name: <input type="text" name="firstname"> </li><!--first name-->
-                    <li>last name:  <input type="text" name="lastname"> </li><!--last name-->
-                    <li>email:      <input type="text" name="email"> </li><!--email-->
+                    <img src="http://i.imgur.com/8fUaaBv.png"> <input type="text" name="firstname" style="position: absolute; top: 190px; left: 250px;"> <!--first name--> <br>
+                    <img src="http://i.imgur.com/GxwoAaE.png"> <input type="text" name="lastname" style="position: absolute; top: 225px; left: 250px;"> <!--last name--> <br>
+                    <img src="http://i.imgur.com/bjqK1Om.png"> <input type="text" name="email" style="position: absolute; top:260px; left: 250px;"> <!--email--> <br>
                 </ul>
                 <br/>
                 <input type="submit" value="Register"> 

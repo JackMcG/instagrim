@@ -50,7 +50,9 @@
                     %>
 
                 <a href="/Instagrim/Images/<%=lg.getUsername()%>"><img src="http://i.imgur.com/OcS0qRx.png?1" style="position: absolute; top: 113px; right: 80px;"/></a>
-                    <%}
+                <a href="/Instagrim/logout.jsp"><img src="http://i.imgur.com/53jT2Sb.png"style="position: absolute; top:20px; right: 20px;"></a><!--logout-->
+                   <!-- buttons if logged in-->
+                <%}
                             }else{
                                 %>
                 
@@ -73,5 +75,5 @@
                 </footer>
             </ul>
         </footer>
-    
+        </body>
 </html>
