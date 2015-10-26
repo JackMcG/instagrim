@@ -26,7 +26,7 @@
     <body>
         <div class="page-wrap">
         <header>
-            <h1> <a href="/Instagrim"><img src ="http://i.imgur.com/Bwex2g0.png"></a> </h1>
+            <h1> <a href="/Instagrim/index.jsp"><img src ="http://i.imgur.com/Bwex2g0.png"></a> </h1>
             <!--<h2>Your world in Black and White</h2>-->
         </header>
         <nav>

@@ -32,7 +32,7 @@
         
         <nav>
             <ul>
-                <a href="/Instagrim/upload.jsp"><img src="http://i.imgur.com/VfnsvwW.png"></a>
+                <a href="/Instagrim/index.jsp"><img src="http://i.imgur.com/VfnsvwW.png"></a>
          
             </ul>
         </nav>

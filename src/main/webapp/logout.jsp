@@ -29,7 +29,7 @@
       <div class="page-wrap">
     <body>
         <header>
-            <h1> <a href="/Instagrim"><img src ="http://i.imgur.com/Bwex2g0.png"></a> </h1>
+            <h1> <a href="/Instagrim/index.jsp"><img src ="http://i.imgur.com/Bwex2g0.png"></a> </h1>
         </header>
         <nav>
             <ul>  
@@ -64,7 +64,7 @@
             </ul>
         </nav>
         <article>
-            <h1>Are you sure you want to log out?</h1>     
+            <h1><img src="http://i.imgur.com/Z9jYIKZ.png"></h1>     
                 <form action="${pageContext.request.contextPath}/logout" method="post">
                     <input type="submit" value="log out"> 
                 </form>
